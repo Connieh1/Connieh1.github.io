@@ -1,21 +1,21 @@
 ---
 layout: post
 title:      "Active Record Build Method"
-date:       2019-09-06 13:05:57 +0000
+date:       2019-09-06 09:05:58 -0400
 permalink:  active_record_build_method
 ---
 
 
-When Active Record associations are declared, the declaring class automatically gains methods related to the association [documentation](https://guides.rubyonrails.org/association_basics.html#polymorphic-associations).
+When Active Record associations are declared, the declaring class automatically gains methods related to the association [[documentation](https://guides.rubyonrails.org/association_basics.html#polymorphic-associations)].
 
-When has_many, or belongs_to associations are declared, the class gains the build method, among others. The build method is an alias [doc](https://github.com/rails/rails/blob/959fb8ea651fa6638aaa7caced20d921ca2ea5c1/activerecord/lib/active_record/relation.rb#L84) for the new method, however, the build method has the association present, which new does not. As with new, build will not insert a record into the database, but in working memory. If you would like it to persist to the database, it must be saved.
+When has_many, or belongs_to associations are declared, the class gains the build method, among others. The build method is an alias [[doc](https://github.com/rails/rails/blob/959fb8ea651fa6638aaa7caced20d921ca2ea5c1/activerecord/lib/active_record/relation.rb#L84) ]for the new method, however, the build method has the association present, which new does not. As with new, build will not insert a record into the database, but in working memory. If you would like it to persist to the database, it must be saved.
 
 When declaring a has_many association, the class gains:
 
 collection.build(attributes = {}, ...)
 
 
-This following example comes from apidock.com[doc](https://apidock.com/rails/ActiveRecord/Associations/CollectionProxy/build)
+This following example comes from apidock.com[[doc](https://apidock.com/rails/ActiveRecord/Associations/CollectionProxy/build)]
 
 ```
 class Person
