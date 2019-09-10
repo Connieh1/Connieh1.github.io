@@ -6,7 +6,7 @@ permalink:  active_record_build_method
 ---
 
 
-When Active Record associations are declared, the declaring class automatically gains methods related to the association [[documentation](https://guides.rubyonrails.org/association_basics.html#polymorphic-associations)].
+When Active Record associations are declared, the declaring class automatically gains methods related to the association [[documentation](https://guides.rubyonrails.org/association_basics.html#detailed-association-reference)].
 
 When has_many, or belongs_to associations are declared, the class gains the build method, among others. The build method is an alias [[doc](https://github.com/rails/rails/blob/959fb8ea651fa6638aaa7caced20d921ca2ea5c1/activerecord/lib/active_record/relation.rb#L84)] for the new method, however, the build method has the association present, which new does not. As with new, build will not insert a record into the database, but in working memory. If you would like it to persist to the database, it must be saved.
 
