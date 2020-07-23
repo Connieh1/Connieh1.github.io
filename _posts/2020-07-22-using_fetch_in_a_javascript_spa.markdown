@@ -70,3 +70,5 @@ Javascript fetch requests have evolved from XMLHttpRequests, and makes loading d
 
 This project has been fun, and has a lot of room for growth. I may revisit it someday.
 
+[](https://github.com/Connieh1/this-happened-frontend)
+
